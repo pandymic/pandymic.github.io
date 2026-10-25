@@ -13,14 +13,29 @@
 <body>
 
 <header class="site-header">
-<p class="eyebrow"><a href="../">← pandymic.github.io</a></p>
-<h1>Tech notes</h1>
-<p class="lead">A few general-purpose reminders from the world of computing, written by hand and framed the same way as the home page.</p>
+<a class="brand" href="../">
+<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#3a4d66"/><g fill="none" stroke-width="5.5" stroke-linecap="round" transform="translate(32 32) scale(.8) translate(-34.25 -34)"><circle cx="30" cy="27" r="11" stroke="#fff"/><path d="M19 27v25" stroke="#fff"/><circle cx="48" cy="36" r="3.5" fill="#f7a300" stroke="none"/></g></svg>
+<span>pandymic.github.io</span>
+</a>
+<nav aria-label="Main">
+<ul role="list">
+<li><a href="../">Home</a></li>
+<li><a href="../%F0%9F%96%A5/">🖥 Tech notes</a></li>
+</ul>
+</nav>
 </header>
 
+
 <main>
-<section>
-<h2>🖥 Tech Notes <code>html</code></h2>
+<div class="flow">
+<p class="eyebrow">Tech notes</p>
+<h1>Bits, bytes and build steps.</h1>
+<p class="lead">A few general-purpose reminders from the world of computing, written by hand and framed the same way as the home page.</p>
+</div>
+
+<div class="grid">
+<section class="card">
+<h2>Static sites and pipelines <code>html</code></h2>
 <p>A few general-purpose reminders from the world of computing.</p>
 <h3>Static sites</h3>
 <p>A static site is just files: HTML, CSS, JavaScript and assets. With no server-side code to run, hosting is cheap, fast and hard to break. Build once, serve anywhere.</p>
@@ -32,8 +47,8 @@
 </ul>
 </section>
 
-<section>
-<h2>🖥 Shell Basics <code>html</code></h2>
+<section class="card">
+<h2>Shell and versioning <code>html</code></h2>
 <p>Handy commands worth knowing by heart:</p>
 <pre><code>ls -la          # list files, including hidden
 grep -rn foo .  # search recursively
@@ -49,14 +64,19 @@ node --version</code></pre>
 <li><a href="https://pages.github.com/">GitHub Pages</a></li>
 </ul>
 </section>
+</div>
 </main>
 
 <footer class="site-footer">
-<nav>
-<a href="https://pandymic.com">Personal</a>
-<a href="https://eightyfour.ca">Project</a>
-<a href="https://github.com/pandymic">GitHub</a>
+<p class="site-footer__statement">Built from Markdown and Handlebars with Gulp, and published to GitHub Pages.</p>
+<nav aria-label="Elsewhere">
+<ul role="list">
+<li><a href="https://pandymic.com">Personal</a></li>
+<li><a href="https://eightyfour.ca">Project</a></li>
+<li><a href="https://github.com/pandymic">GitHub</a></li>
+</ul>
 </nav>
+<p class="muted">© Michal Pandyra</p>
 </footer>
 
 <script src="../script.js"></script>

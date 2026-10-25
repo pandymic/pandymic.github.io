@@ -13,13 +13,28 @@
 <body>
 
 <header class="site-header">
-<p class="eyebrow">pandymic.github.io</p>
-<h1>Source in, site out.</h1>
-<p class="lead">A tiny demo of the build-deploy pipeline behind my sites: write once as HTML or Markdown, compile with Gulp, and publish to GitHub Pages. The same content is rendered both ways below, side by side.</p>
+<a class="brand" href="">
+<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#3a4d66"/><g fill="none" stroke-width="5.5" stroke-linecap="round" transform="translate(32 32) scale(.8) translate(-34.25 -34)"><circle cx="30" cy="27" r="11" stroke="#fff"/><path d="M19 27v25" stroke="#fff"/><circle cx="48" cy="36" r="3.5" fill="#f7a300" stroke="none"/></g></svg>
+<span>pandymic.github.io</span>
+</a>
+<nav aria-label="Main">
+<ul role="list">
+<li><a href="">Home</a></li>
+<li><a href="%F0%9F%96%A5/">🖥 Tech notes</a></li>
+</ul>
+</nav>
 </header>
 
+
 <main>
-<section>
+<div class="flow">
+<p class="eyebrow">Hello, World</p>
+<h1>Source in, site out.</h1>
+<p class="lead">A tiny demo of the build-deploy pipeline behind my sites: write once as HTML or Markdown, compile with Gulp, and publish to GitHub Pages. The same content is rendered both ways below, side by side.</p>
+</div>
+
+<div class="grid">
+<section class="card">
 <h2>Welcome! <code>html</code></h2>
 <p>Hello, World! This column is written in plain HTML, right in the Handlebars template.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -35,7 +50,7 @@
 </ul>
 </section>
 
-<section>
+<section class="card">
 <h2>Welcome! <code>markdown</code></h2>
 <p>Hello, World! This column is written in Markdown, compiled to a Handlebars partial, and dropped into the page.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -50,14 +65,19 @@
 <li><a href="./%F0%9F%96%A5/">🖥 Test Link</a></li>
 </ul>
 </section>
+</div>
 </main>
 
 <footer class="site-footer">
-<nav>
-<a href="https://pandymic.com">Personal</a>
-<a href="https://eightyfour.ca">Project</a>
-<a href="https://github.com/pandymic">GitHub</a>
+<p class="site-footer__statement">Built from Markdown and Handlebars with Gulp, and published to GitHub Pages.</p>
+<nav aria-label="Elsewhere">
+<ul role="list">
+<li><a href="https://pandymic.com">Personal</a></li>
+<li><a href="https://eightyfour.ca">Project</a></li>
+<li><a href="https://github.com/pandymic">GitHub</a></li>
+</ul>
 </nav>
+<p class="muted">© Michal Pandyra</p>
 </footer>
 
 <script src="script.js"></script>
